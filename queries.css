@@ -1,12 +1,9 @@
-/* up to 430px row */
-@media only screen and (max-width: 491px) {
-  .billing:first-child {
-    margin-left: 5%!important;
-  }
+#desktop {
+  display: block;
+}
 
-  .card {
-    padding: 15px!important;
-  }
+#mobile {
+  display: none;
 }
 
 /* 430px up to 576px row */
@@ -34,6 +31,25 @@
     width: 200px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  #desktop {
+    display: none;
+  }
+
+  #mobile {
+    display: block;
+  }
+}
+
+/* up to 430px row */
+@media only screen and (max-width: 491px) {
+  .billing:first-child {
+    margin-left: 5%!important;
+  }
+
+  .card {
+    padding: 20px!important;
   }
 }
 
