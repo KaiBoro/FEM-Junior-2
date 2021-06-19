@@ -1,0 +1,307 @@
+/* ------ BASIC SETUP ------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 15px;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  line-height: 1.5;
+  background-color: hsl(230, 100%, 99%);
+  color: hsl(225, 20%, 60%);
+  text-align: center;
+}
+
+body {
+  background-image: url(images/bg-pattern.svg);
+  border-radius: 0 0 0 150px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.row {
+  width: 100%;
+  position: relative;
+  display: block;
+  float: left;
+  margin-bottom: 25px;
+}
+
+/* ------ HEADER ------ */
+header {
+  padding: 50px 5%;
+}
+
+.header-text {
+  background-image: url(images/pattern-circles.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+}
+
+h1 {
+  font-size: 180%;
+  color: hsl(227, 35%, 25%);
+  padding-bottom: 5px;
+  padding-top: 65px;
+}
+
+/* ------ CARD CONTENTS ------ */
+.card {
+  background-color: hsl(0, 0%, 100%);
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  height: 320px;
+}
+
+.slider-title {
+  display: inline-block;
+  float: left;
+  padding-top: 12px;
+  letter-spacing: 2px;
+}
+
+.slider-price {
+  display: inline-block;
+  float: right;
+  letter-spacing: 2px;
+}
+
+.slider-price span {
+  font-size: 200%;
+  color: hsl(227, 35%, 25%);
+  font-weight: 800;
+}
+
+.billing,
+.switch {
+  display: inline-block;
+  float: left;
+  font-size: 70%;
+}
+
+.billing:first-child {
+  margin-left: 125px;
+}
+
+.billing span {
+  background-color: hsl(14, 92%, 95%);
+  color: hsl(15, 100%, 70%);
+  padding: 2px 5px;
+  border-radius: 50px;
+}
+
+.separation {
+  border-top: 1px solid hsl(224, 65%, 95%);
+}
+
+.trial-facts {
+  display: inline-block;
+  float: left;
+  text-align: left;
+  font-size: 70%;
+}
+
+.trial-facts p {
+  padding: 5px 0 5px 15px;
+}
+
+.check-icon {
+  margin-right: 10px;
+  color: hsl(174, 86%, 45%);
+}
+
+/* ------ BUTTON ------ */
+.btn-full {
+  background-color: hsl(227, 35%, 25%);
+  padding: 10px 30px;
+  display: inline-block;
+  float: right;
+  border-radius: 50px;
+  margin-top: 15px;
+  color: hsl(226, 100%, 87%);
+  text-decoration: none;
+  font-size: 80%;
+  transition: color 0.2s;
+}
+
+.btn-full:hover {
+  color: hsl(0, 0%, 100%);
+}
+
+/* ------ SLIDER ------ */
+input[type=range] {
+  -webkit-appearance: none; /* Override default CSS styles */
+  appearance: none;
+  width: 90%;
+  background: hsl(224, 65%, 95%);
+  border-radius: 50px;
+  height: 7px;
+}
+
+/* -- Webkit -- */
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 30px;
+  height: 30px;
+  background: url(images/icon-slider.svg);
+  background-color: hsl(174, 86%, 45%);
+  cursor: pointer;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: rgb(16, 213, 194) 0px 10px 36px 0px, rgb(16, 213, 194) 0px 0px 0px 1px;
+  transition: background-color 0.2s, border 0.2s, box-shadow 0.2s;
+  border: 1px solid hsl(174, 86%, 45%);
+}
+
+input[type=range]::-webkit-slider-thumb:hover,
+input[type=range]::-webkit-slider-thumb:active {
+  background-color: #22aea1;
+  border: 1px solid #22aea1;
+  box-shadow: #22aea1 0px 10px 36px 0px, #22aea1 0px 0px 0px 1px;
+}
+
+/* -- Moz -- */
+input[type=range]::-moz-range-thumb {
+  -webkit-appearance: none;
+  width: 30px;
+  height: 30px;
+  background: url(images/icon-slider.svg);
+  background-color: hsl(174, 86%, 45%);
+  cursor: pointer;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: rgb(16, 213, 194) 0px 10px 36px 0px, rgb(16, 213, 194) 0px 0px 0px 1px;
+  border: 1px solid hsl(174, 86%, 45%);
+  transition: background-color 0.2s, border 0.2s, box-shadow 0.2s;
+}
+
+input[type=range]::-moz-range-progress {
+  background: hsl(174, 86%, 45%);
+  border: 2px solid hsl(174, 86%, 45%);
+  border-radius: 50px 0 0 50px;
+}
+
+input[type=range]::-moz-range-thumb:hover,
+input[type=range]::-moz-range-thumb:active {
+  background-color: #22aea1;
+  border: 1px solid #22aea1;
+  box-shadow: #22aea1 0px 10px 36px 0px, #22aea1 0px 0px 0px 1px;
+}
+
+/* -- Ms -- */
+input[type=range]::-ms-thumb {
+  -webkit-appearance: none;
+  width: 30px;
+  height: 30px;
+  background: url(images/icon-slider.svg);
+  background-color: hsl(174, 86%, 45%);
+  cursor: pointer;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: rgb(16, 213, 194) 0px 10px 36px 0px, rgb(16, 213, 194) 0px 0px 0px 1px;
+  border: 1px solid hsl(174, 86%, 45%);
+  transition: background-color 0.2s, border 0.2s, box-shadow 0.2s;
+}
+
+input[type=range]::-ms-fill-lower {
+  background: hsl(174, 86%, 45%);
+  border: 2px solid hsl(174, 86%, 45%);
+  border-radius: 50px 0 0 50px;
+}
+
+input[type=range]::-ms-thumb:hover,
+input[type=range]::-ms-thumb:active {
+  background-color: #22aea1;
+  border: 100px solid #22aea1;
+  box-shadow: #22aea1 0px 10px 36px 0px, #22aea1 0px 0px 0px 1px;
+}
+
+/* ------ SWITCH ------ */
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 17px;
+  display: inline-block;
+  float: left;
+  margin: 0 10px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: hsl(174, 86%, 45%);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px hsl(174, 86%, 45%);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(13px);
+  -ms-transform: translateX(13px);
+  transform: translateX(13px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* ------ ATTRIBUTION ------ */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

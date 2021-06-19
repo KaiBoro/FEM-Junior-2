@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Font Awesome link -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+  <!-- Google Fonts link -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+
+  <!-- Queries link -->
+  <link rel="stylesheet" href="queries.css">
+
+  <!-- Styles link -->
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Frontend Mentor | Interactive pricing component</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-text">
+      <h1>Simple, traffic-based pricing</h1>
+      <p>Sign-up for our 30-day trial. No credit card required.</p>
+    </div>
+  </header>
+
+  <section>
+    <div class="card">
+
+      <!-- Slider title / price -->
+      <div class="row">
+        <p class="slider-title"><span id="clicks"></span> Pageviews</p>
+        <p class="slider-price"><span>$</span><span id="price"></span>/month</p>
+      </div>
+
+      <!-- SLIDER -->
+      <div class="row">
+        <input type="range" min="0" max="4" value="2" id="myRange">
+      </div>
+
+      <!-- Monthly / Yearly switch -->
+      <div class="row">
+        <p class="billing">Monthly Billing</p>
+        <label class="switch">
+          <input type="checkbox" id="switch">
+          <span class="slider round"></span>
+        </label>
+        <p class="billing">Yearly Billing <span>25% discount</span></p>
+      </div>
+
+      <!-- Separation line -->
+      <div class="row">
+        <div class="separation">
+
+        </div>
+      </div>
+
+      <!-- Trial facts / Start Button -->
+      <div class="row">
+        <div class="trial-facts">
+          <p><i class="fas fa-check check-icon"></i>Unlimited websites</p>
+          <p><i class="fas fa-check check-icon"></i>100% data ownership</p>
+          <p><i class="fas fa-check check-icon"></i>Email reports</p>
+        </div>
+          <a class="btn-full" href="#">Start my trial</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Attribution -->
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Kai Borowski</a>.
+  </div>
+
+  <!-- JS link -->
+  <script src="script.js"></script>
+</body>
+
+</html>

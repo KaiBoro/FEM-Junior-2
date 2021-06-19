@@ -1,0 +1,41 @@
+/* up to 430px row */
+@media only screen and (max-width: 491px) {
+  .billing:first-child {
+    margin-left: 5%!important;
+  }
+}
+
+/* 430px up to 576px row */
+@media only screen and (max-width: 576px) {
+  .card {
+    width: 90%!important;
+    height: 420px!important;
+  }
+
+  .slider-title,
+  .slider-price {
+    display: block!important;
+    float: none!important;
+  }
+
+  .trial-facts {
+    display: block!important;
+    float: none!important;
+    text-align: center!important;
+  }
+
+  .btn-full {
+    display: block!important;
+    float: none!important;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* 577px up to 1400px row */
+@media only screen and (max-width: 1400px) {
+  body {
+    background-size: auto !important;
+  }
+}
